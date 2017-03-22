@@ -1,0 +1,16 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.33333%, auto)); }
+  @media only screen and (max-width: 1200px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(16.66667%, auto)); } }
+  @media only screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(33.33333%, auto)); } }
+  @media only screen and (max-width: 580px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(66.66667%, auto)); } }
+
+.grid {
+  background-color: orangered;
+  padding: 2em; }
