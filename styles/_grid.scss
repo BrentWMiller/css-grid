@@ -1,4 +1,6 @@
-$base-grid-size: (100% / 12);
+$base-grid-min-col: 1;
+$base-grid-max-col: 12;
+$base-grid-size: (100% / $base-grid-max-col);
 
 .grid-container {
 	display: grid;
