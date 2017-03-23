@@ -6,7 +6,11 @@ $base-grid-size: (100% / $base-grid-max-col);
 	display: grid;
 
 	grid-template-columns: repeat(auto-fit, minmax($base-grid-size, auto));
+}
 
+@for $i from $base-grid-min-col through $base-grid-max-col {
+	.grid-span-#{$i} {
+		grid-column: span #{$i};
 	}
 }
 
