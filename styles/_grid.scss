@@ -5,16 +5,6 @@ $base-grid-size: (100% / 12);
 
 	grid-template-columns: repeat(auto-fit, minmax($base-grid-size, auto));
 
-	@media only screen and (max-width: 1200px) {
-		grid-template-columns: repeat(auto-fit, minmax(($base-grid-size * 2), auto));
-	}
-
-	@media only screen and (max-width: 768px) {
-		grid-template-columns: repeat(auto-fit, minmax(($base-grid-size * 4), auto));
-	}
-
-	@media only screen and (max-width: 580px) {
-		grid-template-columns: repeat(auto-fit, minmax(($base-grid-size * 8), auto));
 	}
 }
 
