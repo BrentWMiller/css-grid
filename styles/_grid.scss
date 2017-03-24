@@ -2,6 +2,9 @@ $base-grid-min-col: 1;
 $base-grid-max-col: 12;
 $base-grid-size: (100% / $base-grid-max-col);
 
+$base-grid-min-row: 1;
+$base-grid-max-row: 12;
+
 .grid-container {
 	display: grid;
 
@@ -9,8 +12,14 @@ $base-grid-size: (100% / $base-grid-max-col);
 }
 
 @for $i from $base-grid-min-col through $base-grid-max-col {
-	.grid-span-#{$i} {
+	.grid-col-#{$i} {
 		grid-column: span #{$i};
+	}
+}
+
+@for $i from $base-grid-min-row through $base-grid-max-row {
+	.grid-row-#{$i} {
+		grid-row: #{$i};
 	}
 }
 
